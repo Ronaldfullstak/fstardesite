@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duarte Serviços — Gestão Empresarial</title>
+  
+  <!-- Fontes do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Folha de Estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER GLOBAL ================= -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="brand-logo" onclick="navigateTo('home')">
+        <span class="logo-title">Duarte Serviços</span>
+        <span class="logo-subtitle">GESTÃO EMPRESARIAL</span>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><span class="nav-link active" data-page="home" onclick="navigateTo('home')">Início</span></li>
+          <li><span class="nav-link" data-page="servicos" onclick="navigateTo('servicos')">Serviços</span></li>
+          <li><span class="nav-link" data-page="obrigacoes" onclick="navigateTo('obrigacoes')">Obrigações anuais</span></li>
+          <li><span class="nav-link" data-page="contato" onclick="navigateTo('contato')">Contato</span></li>
+        </ul>
+        <button class="btn-header" onclick="navigateTo('contato')">Solicitar análise</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= PÁGINA 1: INÍCIO ================= -->
+  <main id="view-home" class="page-view active">
+    <!-- Hero Home -->
+<section class="hero-section home-hero">
+  <div class="container hero-container">
+    <!-- Coluna da Esquerda: Textos -->
+    <div class="hero-content">
+      <span class="hero-eyebrow">LEGALIZAÇÃO E CONFORMIDADE EMPRESARIAL</span>
+      <h1 class="hero-title">Sua empresa regular, do primeiro CNPJ à operação multinacional</h1>
+      <p class="hero-description">Cuidamos da abertura, das inscrições e de cada licença exigida — municipal, estadual, federal, Corpo de Bombeiros, ambiental e Vigilância Sanitária — além das obrigações que se repetem a cada ano de atividade.</p>
+      <button class="btn-hero" onclick="navigateTo('contato')">Falar com a Duarte Serviços</button>
+    </div>
+
+    <!-- Coluna da Direita: Sua Foto Circular -->
+    <div class="hero-profile">
+      <img src="foto/perfil.jpg" alt="Foto Duarte Serviços" class="profile-img">
+    </div>
+  </div>
+</section>
+
+    <!-- Portfólio de Serviços Resumido -->
+    <section class="section-padding">
+      <div class="container">
+        <span class="section-eyebrow">PORTFÓLIO DE SERVIÇOS</span>
+        <h2 class="section-title">Tudo que a legalização de uma empresa exige</h2>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <h3 class="service-card-title">Abertura de CNPJ</h3>
+            <p class="service-card-desc">Constituição da empresa na Receita Federal com definição de natureza jurídica, CNAE, capital social e regime tributário.</p>
+            <ul class="service-card-list">
+              <li>Viabilidade de nome e endereço (consulta prévia)</li>
+              <li>Registro na Junta Comercial ou Cartório de Pessoas Jurídicas</li>
+              <li>Emissão do CNPJ e do certificado digital e-CNPJ</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-card-title">Cadastro e inscrição municipal</h3>
+            <p class="service-card-desc">Cadastro do contribuinte na prefeitura e obtenção da inscrição municipal para emissão de nota fiscal de serviço.</p>
+            <ul class="service-card-list">
+              <li>Cadastro no CCM / CMC do município</li>
+              <li>Inscrição municipal e liberação da NFS-e</li>
+              <li>Alvará de funcionamento e uso do solo</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-card-title">Inscrição estadual</h3>
+            <p class="service-card-desc">Habilitação na Secretaria da Fazenda para atividades de comércio, indústria e transporte sujeitas ao ICMS.</p>
+            <ul class="service-card-list">
+              <li>Abertura de IE no Sintegra / Sefaz do estado</li>
+              <li>Credenciamento para NF-e e CT-e</li>
+              <li>Regime de substituição tributária e Sped Fiscal</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-card-title">Inscrição e habilitações federais</h3>
+            <p class="service-card-desc">Registros federais complementares ao CNPJ, exigidos conforme a atividade e o porte da empresa.</p>
+            <ul class="service-card-list">
+              <li>Cadastro no eSocial, EFD-Reinf e CNO quando aplicável</li>
+              <li>Habilitação no Radar/Siscomex para importação e exportação</li>
+              <li>Registros setoriais (Anvisa, MAPA, ANP, Anatel)</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-card-title">Licenciamento no Corpo de Bombeiros</h3>
+            <p class="service-card-desc">Projeto técnico, vistoria e emissão do AVCB ou CLCB conforme risco e área construída da edificação.</p>
+            <ul class="service-card-list">
+              <li>Projeto de prevenção e combate a incêndio</li>
+              <li>Vistoria técnica e adequação de saídas e sinalização</li>
+              <li>Emissão e renovação de AVCB / CLCB</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-card-title">Licenciamento ambiental</h3>
+            <p class="service-card-desc">Licenças prévia, de instalação e de operação junto aos órgãos ambientais municipais, estaduais e ao Ibama.</p>
+            <ul class="service-card-list">
+              <li>LP, LI e LO ou licença simplificada / dispensa</li>
+              <li>Cadastro Técnico Federal e relatórios anuais</li>
+              <li>Plano de gerenciamento de resíduos (PGRS)</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-card-title">Vigilância Sanitária</h3>
+            <p class="service-card-desc">Licença sanitária para alimentos, saúde, estética, farmácias e indústrias, com adequação de boas práticas.</p>
+            <ul class="service-card-list">
+              <li>Licença sanitária municipal e estadual</li>
+              <li>Autorização de Funcionamento (AFE) na Anvisa</li>
+              <li>Manual de boas práticas e POPs</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-card-title">Estruturação por porte</h3>
+            <p class="service-card-desc">Legalização desenhada para a realidade de cada porte: do MEI à operação multinacional com múltiplas filiais.</p>
+            <ul class="service-card-list">
+              <li>MEI: enquadramento, limite de receita e DAS</li>
+              <li>ME, EPP e PMEs: Simples Nacional e obrigações acessórias</li>
+              <li>Grande porte: Lucro Real, Sped completo e auditoria</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section-footer-link">
+          <a onclick="navigateTo('servicos')">Ver detalhamento completo dos serviços</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portes Atendidos -->
+    <section class="portes-section">
+      <div class="container">
+        <span class="section-eyebrow">PORTES ATENDIDOS</span>
+        <h2 class="section-title">Cada porte tem um caminho de conformidade</h2>
+
+        <div class="portes-grid">
+          <div class="porte-card">
+            <h3 class="porte-title">MEI</h3>
+            <span class="porte-badge">Faturamento até R$ 81 mil/ano</span>
+            <p class="porte-item">Registro simplificado no Portal do Empreendedor</p>
+            <p class="porte-item">DAS mensal e DASN-SIMEI anual</p>
+            <p class="porte-item">Um empregado permitido e CNAEs restritos</p>
+          </div>
+
+          <div class="porte-card">
+            <h3 class="porte-title">ME e EPP</h3>
+            <span class="porte-badge">Até R$ 360 mil e R$ 4,8 milhões/ano</span>
+            <p class="porte-item">Opção pelo Simples Nacional e PGDAS-D mensal</p>
+            <p class="porte-item">Escrituração contábil e folha completa</p>
+            <p class="porte-item">Licenças municipais, estaduais e sanitárias conforme atividade</p>
+          </div>
+
+          <div class="porte-card">
+            <h3 class="porte-title">Grande porte</h3>
+            <span class="porte-badge">Receita acima de R$ 4,8 milhões/ano</span>
+            <p class="porte-item">Lucro Presumido ou Real com ECF e ECD</p>
+            <p class="porte-item">Sped Fiscal, Contribuições, EFD-Reinf e eSocial</p>
+            <p class="porte-item">Licenciamento ambiental e sanitário de maior complexidade</p>
+          </div>
+
+          <div class="porte-card">
+            <h3 class="porte-title">Multinacionais</h3>
+            <span class="porte-badge">Grupos com capital estrangeiro</span>
+            <p class="porte-item">Filial ou subsidiária com autorização e procurador no Brasil</p>
+            <p class="porte-item">Registro de capital estrangeiro no Banco Central (RDE-IED)</p>
+            <p class="porte-item">Radar Siscomex, preços de transferência e compliance societário</p>
+          </div>
+        </div>
+
+        <!-- Banner de Chamada -->
+        <div class="cta-container">
+          <div class="cta-text">
+            <h3>Quer saber quais obrigações a sua empresa tem este ano?</h3>
+            <p>Montamos o calendário de entregas mensais, anuais e de renovação de licenças conforme o seu porte e a sua atividade.</p>
+          </div>
+          <button class="btn-cta" onclick="navigateTo('obrigacoes')">Ver calendário</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= PÁGINA 2: SERVIÇOS DETALHADOS ================= -->
+  <main id="view-servicos" class="page-view">
+    <section class="hero-section">
+      <div class="container">
+        <span class="hero-eyebrow">SERVIÇOS</span>
+        <h1 class="hero-title">Cada etapa da legalização, detalhada</h1>
+        <p class="hero-description">Do registro inicial às licenças específicas da sua atividade, conduzimos o processo junto aos órgãos municipais, estaduais e federais.</p>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="services-grid">
+          <div class="service-card">
+            <h3 class="service-card-title">Abertura de CNPJ</h3>
+            <p class="service-card-desc">Constituição da empresa na Receita Federal com definição de natureza jurídica, CNAE, capital social e regime tributário.</p>
+            <ul class="service-card-list">
+              <li>Viabilidade de nome e endereço (consulta prévia)</li>
+              <li>Registro na Junta Comercial ou Cartório de Pessoas Jurídicas</li>
+              <li>Emissão do CNPJ e do certificado digital e-CNPJ</li>
+              <li>Enquadramento: MEI, Simples Nacional, Lucro Presumido ou Real</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-card-title">Cadastro e inscrição municipal</h3>
+            <p class="service-card-desc">Cadastro do contribuinte na prefeitura e obtenção da inscrição municipal para emissão de nota fiscal de serviço.</p>
+            <ul class="service-card-list">
+              <li>Cadastro no CCM / CMC do município</li>
+              <li>Inscrição municipal e liberação da NFS-e</li>
+              <li>Alvará de funcionamento e uso do solo</li>
+              <li>Enquadramento de ISS e taxas municipais</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-card-title">Inscrição estadual</h3>
+            <p class="service-card-desc">Habilitação na Secretaria da Fazenda para atividades de comércio, indústria e transporte sujeitas ao ICMS.</p>
+            <ul class="service-card-list">
+              <li>Abertura de IE no Sintegra / Sefaz do estado</li>
+              <li>Credenciamento para NF-e e CT-e</li>
+              <li>Regime de substituição tributária e Sped Fiscal</li>
+              <li>Alterações, baixas e reativação cadastral</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-card-title">Inscrição e habilitações federais</h3>
+            <p class="service-card-desc">Registros federais complementares ao CNPJ, exigidos conforme a atividade e o porte da empresa.</p>
+            <ul class="service-card-list">
+              <li>Cadastro no eSocial, EFD-Reinf e CNO quando aplicável</li>
+              <li>Habilitação no Radar/Siscomex para importação e exportação</li>
+              <li>Registros setoriais (Anvisa, MAPA, ANP, Anatel)</li>
+              <li>Cadastro em conselhos de classe (CREA, CRM, CRC, CRO)</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-card-title">Licenciamento no Corpo de Bombeiros</h3>
+            <p class="service-card-desc">Projeto técnico, vistoria e emissão do AVCB ou CLCB conforme risco e área construída da edificação.</p>
+            <ul class="service-card-list">
+              <li>Projeto de prevenção e combate a incêndio</li>
+              <li>Vistoria técnica e adequação de saídas e sinalização</li>
+              <li>Emissão e renovação de AVCB / CLCB</li>
+              <li>Laudos de extintores, hidrantes e brigada de incêndio</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-card-title">Licenciamento ambiental</h3>
+            <p class="service-card-desc">Licenças prévia, de instalação e de operação junto aos órgãos ambientais municipais, estaduais e ao Ibama.</p>
+            <ul class="service-card-list">
+              <li>LP, LI e LO ou licença simplificada / dispensa</li>
+              <li>Cadastro Técnico Federal e relatórios anuais</li>
+              <li>Plano de gerenciamento de resíduos (PGRS)</li>
+              <li>Outorga de água, efluentes e emissões atmosféricas</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-card-title">Vigilância Sanitária</h3>
+            <p class="service-card-desc">Licença sanitária para alimentos, saúde, estética, farmácias e indústrias, com adequação de boas práticas.</p>
+            <ul class="service-card-list">
+              <li>Licença sanitária municipal e estadual</li>
+              <li>Autorização de Funcionamento (AFE) na Anvisa</li>
+              <li>Manual de boas práticas e POPs</li>
+              <li>Responsável técnico e adequação de layout</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-card-title">Estruturação por porte</h3>
+            <p class="service-card-desc">Legalização desenhada para a realidade de cada porte: do MEI à operação multinacional com múltiplas filiais.</p>
+            <ul class="service-card-list">
+              <li>MEI: enquadramento, limite de receita e DAS</li>
+              <li>ME, EPP e PMEs: Simples Nacional e obrigações acessórias</li>
+              <li>Grande porte: Lucro Real, Sped completo e auditoria</li>
+              <li>Multinacionais: filial de empresa estrangeira, RDE-IED e compliance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= PÁGINA 3: OBRIGAÇÕES ANUAIS ================= -->
+  <main id="view-obrigacoes" class="page-view">
+    <section class="hero-section">
+      <div class="container">
+        <span class="hero-eyebrow">OBRIGATORIEDADES</span>
+        <h1 class="hero-title">O que sua empresa entrega a cada ano de atividade</h1>
+        <p class="hero-description">Manter o CNPJ ativo vai além da abertura: existem entregas mensais, declarações anuais e licenças com prazo de renovação. Acompanhamos todo o ciclo.</p>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="obligations-list">
+          <div class="obligation-card">
+            <div class="obligation-header">
+              <span class="obligation-number">01</span>
+              <h3 class="obligation-title">Ano 1 — Constituição</h3>
+            </div>
+            <ul class="obligation-bullets">
+              <li>Abertura do CNPJ, contrato social e certificado digital</li>
+              <li>Inscrições municipal e estadual, alvará e uso do solo</li>
+              <li>Licenças de bombeiros, ambiental e sanitária conforme atividade</li>
+              <li>Início das entregas mensais: DAS/PGDAS-D, eSocial, DCTFWeb</li>
+            </ul>
+          </div>
+
+          <div class="obligation-card">
+            <div class="obligation-header">
+              <span class="obligation-number">02</span>
+              <h3 class="obligation-title">Todo mês</h3>
+            </div>
+            <ul class="obligation-bullets">
+              <li>Apuração e recolhimento de tributos (DAS, ICMS, ISS, IRPJ/CSLL)</li>
+              <li>Folha de pagamento, FGTS e eSocial</li>
+              <li>Emissão e escrituração de notas fiscais (NF-e, NFS-e, CT-e)</li>
+              <li>Sped Fiscal e EFD-Contribuições, quando aplicável</li>
+            </ul>
+          </div>
+
+          <div class="obligation-card">
+            <div class="obligation-header">
+              <span class="obligation-number">03</span>
+              <h3 class="obligation-title">Todo ano</h3>
+            </div>
+            <ul class="obligation-bullets">
+              <li>DASN-SIMEI (MEI) ou DEFIS (Simples Nacional)</li>
+              <li>ECD e ECF para Lucro Presumido e Real</li>
+              <li>DIRF/DCTFWeb anual, RAIS via eSocial e informe de rendimentos</li>
+              <li>Balanço patrimonial e distribuição de lucros</li>
+            </ul>
+          </div>
+
+          <div class="obligation-card">
+            <div class="obligation-header">
+              <span class="obligation-number">04</span>
+              <h3 class="obligation-title">Renovações periódicas</h3>
+            </div>
+            <ul class="obligation-bullets">
+              <li>Alvará de funcionamento e taxa de fiscalização municipal</li>
+              <li>AVCB / CLCB do Corpo de Bombeiros (3 a 5 anos)</li>
+              <li>Licença sanitária e licença ambiental de operação</li>
+              <li>Certificado digital, certidões negativas e conselhos de classe</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="obligation-disclaimer">A lista varia conforme porte, regime tributário, atividade (CNAE) e município de operação. A análise inicial define exatamente o que se aplica ao seu caso.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= PÁGINA 4: CONTATO ================= -->
+  <main id="view-contato" class="page-view">
+    <section class="hero-section">
+      <div class="container">
+        <span class="hero-eyebrow">CONTATO</span>
+        <h1 class="hero-title">Vamos analisar a legalização da sua empresa</h1>
+        <p class="hero-description">Conte a atividade que você exerce e o estágio atual do negócio. Retornamos com o caminho de regularização e a documentação necessária.</p>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="contact-layout">
+          <div class="contact-flow">
+            <h3>Como trabalhamos</h3>
+            <div class="steps-list">
+              <div class="step-item">
+                <span class="step-number">1.</span>
+                <p>Diagnóstico da atividade, do porte e do município de operação</p>
+              </div>
+              <div class="step-item">
+                <span class="step-number">2.</span>
+                <p>Levantamento das inscrições e licenças exigidas</p>
+              </div>
+              <div class="step-item">
+                <span class="step-number">3.</span>
+                <p>Protocolo, acompanhamento e entrega dos documentos</p>
+              </div>
+              <div class="step-item">
+                <span class="step-number">4.</span>
+                <p>Calendário de obrigações e renovações</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <h4 class="contact-card-title">Duarte Serviços</h4>
+            <p class="contact-card-sub">Gestão Empresarial</p>
+
+            <div class="contact-detail-block">
+              <span class="contact-detail-label">WHATSAPP / CELULAR</span>
+              <p class="contact-detail-value">+55 (51) 98206-3535</p>
+            </div>
+
+            <div class="contact-detail-block">
+              <span class="contact-detail-label">E-MAIL</span>
+              <p class="contact-detail-value">assessoria.duarte2027@gmail.com</p>
+            </div>
+
+            <div class="contact-detail-block">
+              <span class="contact-detail-label">ATENDIMENTO</span>
+              <p class="contact-detail-value">Segunda a sexta, das 9h às 18h</p>
+            </div>
+
+            <div class="contact-detail-block">
+              <span class="contact-detail-label">ABRANGÊNCIA</span>
+              <p class="contact-detail-value">Todo o Brasil, presencial e remoto</p>
+            </div>
+
+            <div class="contact-detail-block">
+              <span class="contact-detail-label">ESCOPO</span>
+              <p class="contact-detail-value">MEI, ME, EPP, PMEs, empresas de grande porte e multinacionais</p>
+            </div>
+
+            <a href="https://wa.me/5551982063535" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">Falar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER GLOBAL ================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <p><strong>Duarte Serviços — Gestão Empresarial</strong></p>
+        <p>Legalização, licenciamento e conformidade para empresas de todos os portes.</p>
+      </div>
+
+      <div class="footer-contacts">
+        <p>+55 (51) 98206-3535</p>
+        <a href="mailto:assessoria.duarte2027@gmail.com">assessoria.duarte2027@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script de Controle -->
+  <script src="script.js"></script>
+</body>
+</html>
